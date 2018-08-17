@@ -2442,3 +2442,28 @@ In the future, we might start automatically compiling incompatible third-party m
 ## Something Missing?
 
 If you have ideas for more “How To” recipes that should be on this page, [let us know](https://github.com/facebookincubator/create-react-app/issues) or [contribute some!](https://github.com/facebookincubator/create-react-app/edit/master/packages/react-scripts/template/README.md)
+
+
+## To run/serve the application: 
+  First install Node_Modules using `npm install`
+  To serve the application in the local host `yarn start` or `npm start`
+
+## Functionality: 
+  1. The user can enter a new todo item but not an empty todo. 
+  2. User can either check off the item or delete the item. The checked off time can be toggled between done and undone.
+  3. The counter statement tells us how many items are present in the list including the checked off item as it can be undone anytime. 
+     Only delted items will be considered to be inactive items.
+     
+## Implementation and Code:
+   The code consists of three components Header, Todo and Main. Header and Todo components are imported into Main. The components are separated as it makes code clear and also helps in building Single Page Application if required by adding other components regarding Todo App like a About component, Footer Component and so on. Font-awesome icon is used to decorate the submit button.
+   This Todo app is developed using basic react implementation. This application can be converted into React/Redux application using redux architecutre and action creators. REST API's can also be used to store the todo items in JSON server or MongoDB. 
+   Header Component tells about Todo App. Reactstrap is used in this component to create navbar. Header component is written as functional component as header component do not use props. 
+   The actual functionality of todo app is written in Todo Component. Todo component is written as class component as props is used to create a new item, check off or delete an item from the list.
+   App.css file is modified to style the todo app accordingly. 
+  ## Assumption: I have assumed that the counter to display items that are in the list including the checked off items as it can be toggled. The counter displays the number of items.
+  
+## Resources:
+https://github.com/swathiraja16/React-Application - my first react application, used some ideas from here like header concept and usage of props.
+
+## Created by Swathi Raja   
+   
