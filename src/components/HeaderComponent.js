@@ -1,9 +1,9 @@
 import React, {Component} from 'react';
 import {Navbar} from 'reactstrap';
 
-class Header extends Component {
+export const Header = () => {
 
-    render(){
+    
         return (
             <Navbar dark expand="md">
                 <div className = "container">
@@ -18,8 +18,7 @@ class Header extends Component {
                 </div>
             </Navbar>
         );
-    }
     
-}
+    
+};
 
-export default Header;

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Header from './HeaderComponent';
+import {Header} from './HeaderComponent';
 import Todo from './TodoComponent';
 
 class Main extends Component{
